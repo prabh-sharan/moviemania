@@ -1,11 +1,10 @@
 import React from "react";
 import "./App.css";
 import MovieCard from "./MovieCard";
-import { MOVIE_API_KEY } from "./api";
 import searchIcon from "./search.svg"
 
-console.log(MOVIE_API_KEY)
-const API_URL=`http://www.omdbapi.com/?apikey=${MOVIE_API_KEY}&`
+
+const API_URL=`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_MOVIE_API_KEY}&`
 
 
 const App= ()=>{
